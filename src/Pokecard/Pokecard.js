@@ -9,7 +9,7 @@ function Pokecard({ name, id, type, exp }) {
   const imgSrc = `${POKEMON_API}${padNumber(id)}.png`;
   return (
     <div className="Pokecard">
-      <h1 className="Pokecard-title">{name}</h1>
+      <h2 className="Pokecard-title">{name}</h2>
       <div className="Pokecard-image">
         <img src={imgSrc} alt={name} />
       </div>

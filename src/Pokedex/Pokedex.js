@@ -7,9 +7,9 @@ class Pokedex extends Component {
     const { pokemon, exp, winner } = this.props;
     let message;
     if (winner) {
-      message = <h3 className="Pokedex-winner">I Have Won!</h3>;
+      message = <h1 className="Pokedex-winner">I Have Won!</h1>;
     } else {
-      message = <h3 className="Pokedex-loser">Blast, I Have Lost!</h3>;
+      message = <h1 className="Pokedex-loser">Blast, I Have Lost!</h1>;
     }
     return (
       <div className="Pokedex">
