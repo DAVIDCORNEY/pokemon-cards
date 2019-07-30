@@ -13,9 +13,8 @@ class Pokedex extends Component {
     }
     return (
       <div className="Pokedex">
-        <h1>Pokedex</h1>
-        <h2>Total Exp: {exp}</h2>
         {message}
+        <h2>Total Exp: {exp}</h2>
         <div className="Pokedex-cards">
           {pokemon.map(p => (
             <Pokecard
