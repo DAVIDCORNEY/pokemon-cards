@@ -16,10 +16,11 @@ class Pokedex extends Component {
     ]
   };
   render() {
+    const { pokemon } = this.props;
     return (
       <div>
         <h1>Pokedex</h1>
-        {this.props.pokemon.map(p => (
+        {pokemon.map(p => (
           <Pokecard
             key={p.id}
             id={p.id}
