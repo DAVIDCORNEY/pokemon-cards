@@ -1,14 +1,12 @@
 import React from "react";
 import "./Pokecard.css";
-// const POKEMON_API =
-//   "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
 const POKEMON_API =
   "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/";
 
 const padNumber = num => (num < 999 ? `00${num}`.slice(-3) : num);
 
 function Pokecard({ name, id, type, exp }) {
-  const imgSrc = `${POKEMON_API}${id}.png`;
+  const imgSrc = `${POKEMON_API}${padNumber(id)}.png`;
   return (
     <div className="Pokecard">
       <h1 className="Pokecard-title">{name}</h1>
